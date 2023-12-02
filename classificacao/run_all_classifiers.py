@@ -1,18 +1,20 @@
 import matplotlib.pyplot as plt
 import os, time
 from datetime import datetime
-import mlp_classifier, rf_classifier, svm_classifier
+import mlp_classifier, rf_classifier, svm_classifier,nb_classifier
 
 def main():
     mainStartTime = time.time()
     results = []
-    modelNames = ['MLP','SVM','RF']
+    modelNames = ['MLP','SVM','RF','NB']
     print(f'[INFO] *********MLP**********.')
     results.append(mlp_classifier.main())
     print(f'[INFO] *********SVM**********.')
     results.append(svm_classifier.main())
     print(f'[INFO] *********RF**********.')
     results.append(rf_classifier.main())
+    print(f'[INFO] *********NB**********.')
+    results.append(nb_classifier.main())
     elapsedTime = round(time.time() - mainStartTime,2)
     print(f'[INFO] Total code execution time: {elapsedTime}s')
     plotResults(modelNames,results)
@@ -24,7 +26,7 @@ def plotResults(modelNames,results):
     ax.set_xlabel('Models',weight='bold')
     ax.set_title('Model comparison',fontsize=18,weight='bold')
     ax.bar_label(bar_container, fmt='{:,.2f}%')
-    plt.savefig('./results/'+getCurrentFileNameAndDateTime(), dpi=300) 
+    plt.savefig(r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\results'+getCurrentFileNameAndDateTime(), dpi=300) 
     print(f'[INFO] Plotting final results done in ./results/{getCurrentFileNameAndDateTime()}')
     print(f'[INFO] Close the figure window to end the program.')
     plt.show(block=False)

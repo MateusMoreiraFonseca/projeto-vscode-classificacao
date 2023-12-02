@@ -7,10 +7,10 @@ import time
 
 def main():
     mainStartTime = time.time()
-    trainImagePath = './images_split/train/'
-    testImagePath = './images_split/test/'
-    trainFeaturePath = './features_labels/train/'
-    testFeaturePath = './features_labels/test/'
+    trainImagePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\images_split\train'
+    testImagePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\images_split\teste'
+    trainFeaturePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\features_labels\train'
+    testFeaturePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\features_labels\test'
     print(f'[INFO] ========= TRAINING IMAGES ========= ')
     trainImages, trainLabels = getData(trainImagePath)
     trainEncodedLabels, encoderClasses = encodeLabels(trainLabels)

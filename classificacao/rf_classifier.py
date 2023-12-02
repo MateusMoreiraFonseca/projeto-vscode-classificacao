@@ -8,8 +8,8 @@ from datetime import datetime
 
 def main():
     mainStartTime = time.time()
-    trainFeaturePath = './features_labels/train/'
-    testFeaturePath = './features_labels/test/'
+    trainFeaturePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\features_labels\train'
+    testFeaturePath = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\features_labels\test'
     featureFilename = 'features.csv'
     labelFilename = 'labels.csv'
     encoderFilename = 'encoderClasses.csv'
@@ -75,7 +75,7 @@ def plotConfusionMatrix(encoderClasses,testEncodedLabels,predictedLabels):
     plt.suptitle('Confusion Matrix: '+getCurrentFileNameAndDateTime(),fontsize=18)
     accuracy = metrics.accuracy_score(testEncodedLabels,predictedLabels)*100
     plt.title(f'Accuracy: {accuracy}%',fontsize=18,weight='bold')
-    plt.savefig('./results/'+getCurrentFileNameAndDateTime(), dpi=300)  
+    plt.savefig(r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\results'+getCurrentFileNameAndDateTime(), dpi=300)  
     print(f'[INFO] Plotting done!')
     print(f'[INFO] Close the figure window to end the program.')
     plt.show(block=False)

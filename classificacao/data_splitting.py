@@ -1,9 +1,12 @@
 import os
 import splitfolders
 
+print(f"Current working directory: {os.getcwd()}")
+
 # caminho das imagens
-input_path = './images_full/'
-output_path = './images_split/'
+
+input_path = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\images_full'    
+output_path = r'C:\Users\Pichau\Downloads\Mateus\Desenv\Repositorios\PF-Proc-Img\classificacao\images_split'
 
 def rename_images(path):
     if os.path.exists(path):
