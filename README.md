@@ -112,7 +112,8 @@ A análise comparativa dos descritores e classificadores revelou uma tendência 
 
 ## Executando
 
-1. Execute o arquivo run_all_classifiers.py.
+1. Execute o descritor a sua escolha grayHistogram ou huMomentes
+2. Execute o arquivo run_all_classifiers.py
 
 Certifique-se de formatar e verificar importacoes ou possíveis erros de denpendencias no código antes da execução.
 
