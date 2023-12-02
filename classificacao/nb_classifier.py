@@ -1,6 +1,5 @@
 import os
 import numpy as np
-from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn import metrics, preprocessing
 import matplotlib.pyplot as plt
@@ -20,8 +19,7 @@ def main():
     trainFeatures = getFeatures(trainFeaturePath, featureFilename)
     trainEncodedLabels = getLabels(trainFeaturePath, labelFilename)
 
-    
-    classifier = trainNaiveBayes(trainFeatures, trainEncodedLabels)   
+    classifier = trainNaiveBayes(trainFeatures, trainEncodedLabels)
 
     print(f"[INFO] =========== TEST PHASE =========== ")
     testFeatures = getFeatures(testFeaturePath, featureFilename)
