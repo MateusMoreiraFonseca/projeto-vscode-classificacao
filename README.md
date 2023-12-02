@@ -8,6 +8,9 @@ Classificação de Imagens usando Hu Moments e Naive Bayes
 
 Mateus Moreira Fonseca (1426885)
 
+## Descrição Geral do Projeto
+Este projeto tem como objetivo realizar a classificação de radiografias pulmonares, distinguindo entre casos normais e pacientes afetados pela COVID-19. Foram implementados diversos classificadores, como Multilayer Perceptron (MLP), Random Forest (RF), Support Vector Machine (SVM), e, recentemente, Naive Bayes (NB). A análise se baseia em dois descritores diferentes: o grayHistogramMoments, centrado nas características de cor, e o huMoments, que enfoca os momentos invariantes de Hu relacionados à forma dos pulmões.
+
 ## Descrição do Descritor implementado:
 
 Neste projeto, utilizamos o descritor Hu Moments, uma técnica poderosa para a extração de características de imagens. Os Hu Moments são uma série de sete números calculados usando momentos centrais que são invariantes à escala, rotação e translação da imagem. Isso significa que, independentemente do tamanho, orientação ou posição do objeto na imagem, os Hu Moments permanecem os mesmos.
@@ -112,3 +115,8 @@ A análise comparativa dos descritores e classificadores revelou uma tendência 
 1. Execute o arquivo run_all_classifiers.py.
 
 Certifique-se de formatar e verificar importacoes ou possíveis erros de denpendencias no código antes da execução.
+
+
+## Contato
+
+mateus.fonseca1992@gmail.com
