@@ -2,10 +2,8 @@ import os
 import splitfolders
 
 # caminho das imagens
-input_path = 'C:/Users/Pichau/Downloads/Mateus/Desenv/Repositorios/PF_Processamento_de_Imagens/projeto-vscode-classificacao/classificacao/images_full/'
-print(os.getcwd())
-output_path = 'C:/Users/Pichau/Downloads/Mateus/Desenv/Repositorios/PF_Processamento_de_Imagens/projeto-vscode-classificacao/classificacao/images_split/'
-print(os.getcwd())
+input_path = './images_full/'
+output_path = './images_split/'
 
 def rename_images(path):
     if os.path.exists(path):
