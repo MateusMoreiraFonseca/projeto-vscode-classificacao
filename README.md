@@ -43,14 +43,13 @@ O projeto ja comtemplava 3 classificadores :
 -Random Forest (RF)
 -Support Vector Machine (SVM)
 
-Através do descritor grayHistogramMoments (classificador em escalas de cinza) as accuracias foram: /
-Classificador	Acurácia
-Multilayer Perceptron (MLP)	87,50%
-Random Forest (RF)	94,64%
-Support Vector Machine (SVM)	89,29%
-Naive Bayes (NB)	83,93%
+Através do descritor grayHistogramMoments (classificador em escalas de cinza) as accuracias foram:
+-MPL: 87,50%
+-RF: 94,64%
+-SVM:89,29%
+-NB:83,93%
 
-Através do descritor huMomentes (classificador do momento invariante de Hu) as accuracias foram: 
+Através do descritor huMomentes (classificador do momento invariante de Hu) as accuracias foram:
 -MPL: 50,00%
 -RF: 53,57%
 -SVM:58,93%
